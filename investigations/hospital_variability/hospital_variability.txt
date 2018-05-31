@@ -1,0 +1,20 @@
+The below 10 procedures have the greatest variablity between hospitals:
+
+measure_name    procedure_variability
+ED1     103.4808892002571
+ED2     64.76283900073062
+OP 18   42.035807583866124
+Median Time to Transfer to Another Facility for Acute Coronary Intervention     39.65710792069186
+Improvement in Patient's Visual Function within 90 Days Following Cataract Surgery      29.653514278933436
+Hospital return days for heart failure patients      26.053905808213294
+Endoscopy/polyp surveillance: appropriate follow-up interval for normal colonoscopy in average risk patients        24.437010651610944
+Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival      22.940694710982072
+Hospital return days for heart attack patients      22.865510728906308
+Endoscopy/polyp surveillance: colonoscopy interval for patients with a history of adenomatous polyps - avoidance of inappropriate use       19.240836555037724
+
+Standard deviation is a good measure of variability, and using standard deviation
+of scores across different hospitals, we can find out procedures with greatest
+variability. When calculating standard deviation, the procedures with number of
+hospitals which reported such procedures less than 2400 are excluded. This is to make
+sure we are comparing procedures with enough data points available. 2400 is
+around half of number of unique hospitals.

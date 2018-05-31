@@ -1,0 +1,18 @@
+To answer the question "are average scores for hospital quality or procedural variability
+correlated with patient survey responses?", I calculated correlation coefficient of
+average procedure score and survey score, correlation coefficient of standard deviation
+of procedure scores and survey score, and correlation coefficient of variability adjusted
+average score and survey score.
+
+The first coefficient is -0.37, and this shows that average procedure score is negatively
+correlated with patient survey score. This is unexpected because we might
+think hospitals with higher average scores will have higher survey scores.
+
+The second coefficient is -0.33, and it demonstrates standard deviation of scores is
+negatively correlated with patient survey score. This is expected since more variability
+across different procedures is considered negative.
+
+The last coefficient is 0.11, and it demonstrates variability adjusted average
+score (average / standard deviation) is positively correlated with survey
+score. However, this number is pretty low, so we can conclude that there is no relationship
+between variability adjusted average score and survey score.

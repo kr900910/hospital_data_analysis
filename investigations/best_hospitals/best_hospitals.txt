@@ -1,0 +1,27 @@
+The below 10 hospitals have the most consistently high scores for a variety
+of procedures:
+
+provider_id     hospital_name   adjusted_avg_score
+101305  GEORGE E WEEMS MEMORIAL HOSPITAL        164.75588001646688
+251334  CHOCTAW REGIONAL MEDICAL CENTER 79.16405351181203
+171311  ROOKS COUNTY HEALTH CENTER      46.87107806722243
+371329  FAIRVIEW REGIONAL MEDICAL CENTER AUTHORITY      32.04749080141326
+171360  LINCOLN COUNTY HOSPITAL 31.536826545666088
+431333  SANFORD CANTON-INWOOD MEDICAL CENTER - CAH      31.43511836571747
+451384  COGDELL MEMORIAL HOSPITAL       31.019674135719633
+451310  BALLINGER MEMORIAL HOSPITAL     30.416530416545683
+261334  I-70 COMMUNITY HOSPITAL 28.99999999999996
+271338  BIG HORN CO MEMORIAL HOSPITAL   26.117648802052713
+
+These hospitals have the highest variability adjusted hospital scores.
+
+The variability adjusted hospital score is calculated by dividing
+average of quality scores across different procedures for each hospital by
+standard deviation of such scores. When calculating such metric, the hospitals
+with number of reported procedures less than 25 are excluded. This is to make
+sure we are comparing hospitals with enough data points available. 25 is
+around half of number of unique procedures used in my analysis (which is 49).
+
+The variability adjusted hospital score is appropriate for hospital
+comparison purpose because it measures both level of scores across different
+procedures and consistency of such scores.

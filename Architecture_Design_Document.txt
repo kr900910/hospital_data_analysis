@@ -1,0 +1,25 @@
+This exercise is about analyzing Medicare hospitals data to answer some of questions
+related to hospital quality across different procedures. I used csv files available
+in the Medicare website as data source, loaded the data into HDFS data lake, and
+analyzed the data using Hive.
+
+I stored the data in three different tables:
+	1) hospitals table which has hospital name and state info
+	2) procedures table which lists out all procedures/hospitals pair
+	   that are available in the original raw data
+	3) patient survey results table which has survey score for each hospital
+
+When analyzing the data, I filtered the hospitals with at least 25 different measures
+reported to make sure we evaluate quality of hospitals with sufficient amount of
+data points available. Also, to measure the consistent hospital quality, I used
+variablity adjusted average score which is calculated by average score across
+different procedures divided by standard deviation of such scores. For state comparison,
+I filtered the states which at least have 10 hospitals to make sure we compare
+states with enough number of hosptials. To measure correlation between certain metrics,
+I used Pearson correlation coefficient.
+
+In terms of scores, I made the below assumptions:
+	1) each measure has the same scale of score
+	2) higher score means better hospital quality
+	3) lack of score for certain measure means that measure is not applicable
+	   for hospitals lacking such score

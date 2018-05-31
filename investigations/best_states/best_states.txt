@@ -1,0 +1,25 @@
+The below 10 states are models of high-quality care:
+
+a.state avg_state_score
+CT      11.971303610315108
+MA      10.306847222793548
+NJ      10.053882331286742
+RI      10.007505845074482
+AL      6.3999313471625605
+TN      6.179893897974803
+NC      5.933486776757209
+MI      5.584914313359966
+IN      5.54822093841943
+ME      5.372585071420147
+
+These states have the highest variability adjusted state score.
+
+Similar to variability adjusted hospital score, the variability adjusted
+state score is calculated by dividing average of hospital scores for different
+hospitals in each state by standard deviation of such scores. When calculating
+such metric, the states with number of hospitals less than 10 are excluded
+to make sure we are comparing states with enough number of hospitals available.
+
+The variability adjusted state score is appropriate for state health care
+quality comparison purpose because it measures both level of scores across different
+hospitals and consistency of such scores in each state.
